@@ -1,0 +1,243 @@
+[
+  
+    {
+        "question"      :   "Pregunta: Es una técnica numérica para conducir experimentos en una computadora ?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Simulación",
+                                "Simulación de sistemas",
+                                "Simulación de eventos discretos",
+                                "Simulación de eventos actuales"
+                            ],
+        "correct"       :   "Simulación",
+        "explanation"   :   "la simulación se presenta como una herramienta idónea para ensayar, conocer el funcionamiento de determinados sistemas o anticiparse a problemas.",
+    },
+    {
+        "question"      :   "Pregunta: Es el proceso de diseñar y desarrollar un modelo de un sistema o proceso real y conducir experimentos con el propósito de entender el comportamiento del sistema o evaluar varias estrategias para la operación del sistema.",
+        "image"         :   "",
+        "choices"       :   [
+                                "Simulación",
+                                "Simulación de sistemas",
+                                "Simulación de eventos discretos",
+                                "Simulación de eventos actuales"
+                            ],
+        "correct"       :   "Simulación de sistemas",
+        "explanation"   :   "La simulacion de sistemas es la representacion analitica apoyada en herramientas matematicas y computacionales que permiten evaluar el impacto que producen cambios en las distintas variables, tambien nos permite la eleccion de recursos optimos para el proceso analizado.",
+    },
+    {
+        "question"      :   "Pregunta: Se basa en el uso de ecuaciones matemáticas y estadísticas",
+        "image"         :   "",
+        "choices"       :   [
+                                "Simulación",
+                                "Simulación de sistemas",
+                                "Simulación de eventos discretos",
+                                "Simulación de eventos actuales"
+                            ],
+        "correct"       :   "Simulación de eventos discretos",
+        "explanation"   :   "Tiene por finalidad identificar a sistemas en los que los eventos que cambian el estado del mismo ocurren en instantes espaciados en el tiempo, a diferencia de los sistemas cuyo estado puede cambiar continuamente en el tiempo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Qué es un sistema?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Es un modelo",
+                                "Es un conjunto de partes no interrelacionadas",
+                                "Es una metodología",
+                                "Es un conjunto de partes interrelacionadas"
+                            ],
+        "correct"       :   "Es un conjunto de partes interrelacionadas",
+        "explanation"   :   "Un sistema es un conjunto de partes que se relacionan entre sí que persiguen un objetivo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuál de los siguientes no es una definición de modelo?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Es una abstracción de la realidad",
+                                "Es una representación de la realidad que ayuda entender cómo funciona",
+                                "Es una construcción intelectual y descriptiva de una entidad en la cual un observador tiene interés",
+                                "Es un conjunto de partes interrelacionadas"
+                            ],
+        "correct"       :   "Es un conjunto de partes interrelacionadas",
+        "explanation"   :   "Un modelo es una abstracción, representacion de la realidad o construcción de una entidad de interés para entender el funcionamiento.",
+    },
+    {
+        "question"      :   "Pregunta: Modelo con uno o más parámetros aleatorios. Entradas fijas producen salidas diferentes",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo estocástico",
+        "explanation"   :   "En el modelo estocástico el estado de las variables en el siguiente instante de tiempo no se puede determinar con los datos del estado actual",
+    },
+    {
+        "question"      :   "Pregunta: Modelo en el que entradas fijas producen salidas fijas",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo determinístico",
+        "explanation"   :   "En el modelo determinístico el estado de las variables en el siguiente instante de tiempo se puede determinar con los datos del estado actual",
+    },
+    {
+        "question"      :   "Pregunta: Modelo que permite cambios en el tiempo",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo dinámico",
+        "explanation"   :   "En el modelo dinámico el estado de las variables puede cambiar mientras se realiza algún cálculo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Qué es un sistema?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Es un modelo",
+                                "Es un conjunto de partes no interrelacionadas",
+                                "Es una metodología",
+                                "Es un conjunto de partes interrelacionadas"
+                            ],
+        "correct"       :   "Es un conjunto de partes interrelacionadas",
+        "explanation"   :   "Un sistema es un conjunto de partes que se relacionan entre sí que persiguen un objetivo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuál de los siguientes no es una definición de modelo?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Es una abstracción de la realidad",
+                                "Es una representación de la realidad que ayuda entender cómo funciona",
+                                "Es una construcción intelectual y descriptiva de una entidad en la cual un observador tiene interés",
+                                "Es un conjunto de partes interrelacionadas"
+                            ],
+        "correct"       :   "Es un conjunto de partes interrelacionadas",
+        "explanation"   :   "Un modelo es una abstracción, representacion de la realidad o construcción de una entidad de interés para entender el funcionamiento.",
+    },
+    {
+        "question"      :   "Pregunta: Modelo con uno o más parámetros aleatorios. Entradas fijas producen salidas diferentes",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo estocástico",
+        "explanation"   :   "En el modelo estocástico el estado de las variables en el siguiente instante de tiempo no se puede determinar con los datos del estado actual",
+    },
+    {
+        "question"      :   "Pregunta: Modelo en el que entradas fijas producen salidas fijas",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo determinístico",
+        "explanation"   :   "En el modelo determinístico el estado de las variables en el siguiente instante de tiempo se puede determinar con los datos del estado actual",
+    },
+    {
+        "question"      :   "Pregunta: Modelo que permite cambios en el tiempo",
+        "image"         :   "",
+        "choices"       :   [
+                                "Modelo estático",
+                                "Modelo determinístico",
+                                "Modelo estocástico",
+                                "Modelo dinámico"
+                            ],
+        "correct"       :   "Modelo dinámico",
+        "explanation"   :   "En el modelo dinámico el estado de las variables puede cambiar mientras se realiza algún cálculo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuál de las siguientes herramientas y técnicas es utilizada para mostrar las categorías de defectos más comunes?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Diagrama de Pareto",
+                                "Diagramas de Control",
+                                "Diagramas de Comportamiento",
+                                "Diagramas de Flujo"
+                            ],
+        "correct"       :   "Diagrama de Pareto",
+        "explanation"   :   "El diagrama de Pareto es utilizado con la finalidad de mostrar las categorías de defectos más frecuentes.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuál herramienta o técnica es utilizada para determinar si un proceso es estable o tiene comportamiento predecible?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Diagrama de Flujo",
+                                "Diagrama de Control",
+                                "Tabla de dispersión",
+                                "Diagrama de Comportamiento"
+                            ],
+        "correct"       :   "Diagrama de Control",
+        "explanation"   :   "El diagrama de Control es usado para determinar si algún proceso es estable o su comportamiento se puede predecir.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuando se realiza una inspección?",
+        "image"         :   "",
+        "choices"       :   [
+                                "En cualquier momento que se produzca un entregable",
+                                "Al final del proyecto",
+                                "Sólo antes de entregar el producto final",
+                                "Al inicio del proyecto"
+                            ],
+        "correct"       :   "En cualquier momento que se produzca un entregable",
+        "explanation"   :   "Una inspección se puede realizar en cualquier momento se tenga un entregable.",
+    },
+    {
+        "question"      :   "Pregunta: El equipo de proyecto de un proyecto de impresión de 3500 manuales técnicos para un fabricante de hardware no puede inspeccionar cada uno de los manuales, así que toman una muestra aleatoria y verifican que haya sido impresa correctamente. Este es un ejemplo de:",
+        "image"         :   "",
+        "choices"       :   [
+                                "Estudio Comparativo",
+                                "Análisis Causal",
+                                "Muestreo Estadístico",
+                                "Análisis Costo-Beneficio"
+                            ],
+        "correct"       :   "Muestreo Estadístico",
+        "explanation"   :   "El muestreo estadístico es una técnica para la selección de muestras a partir de una población estadística, como en este ejemplo.",
+    },
+    {
+        "question"      :   "Pregunta: ¿Qué herramienta de Control de Calidad es utilizada para analizar procesos viéndolos gráficamente?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Histograma",
+                                "Diagrama de Pareto",
+                                "Diagrama de Flujo",
+                                "Listas de Verificación"
+                            ],
+        "correct"       :   "Diagrama de Flujo",
+        "explanation"   :   "El diagrama de flujo es una herramienta que se utiliza para analizar procesos observándolos gráficamente.",
+    },
+    {
+        "question"      :   "Pregunta: Usted está viendo un diagrama de control para descubrir si la manera en que está realizando su proyecto se adecua a los estándares de su compañía. ¿Qué proceso está realizando?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Controlar la Calidad",
+                                "Gestionar la Calidad",
+                                "Aseguramiento de Calidad",
+                                "Planificar la Gestión de la Calidad"
+                            ],
+        "correct"       :   "Controlar la Calidad",
+        "explanation"   :   "",
+    },
+    {
+        "question"      :   "Pregunta: ¿Cuál de los siguientes está asociado con la regla 80/20?",
+        "image"         :   "",
+        "choices"       :   [
+                                "Diagrama de Control",
+                                "Diagrama de dispersión",
+                                "Diagrama de Pareto",
+                                "Histograma"
+                            ],
+        "correct"       :   "Diagrama de Pareto",
+        "explanation"   :   "Diagrama de Pareto está relacionado con la regla 80/20.",
+    }
+]
