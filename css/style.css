@@ -35,6 +35,6 @@ img.question-image 									{ width:100%; height:auto; display:block; max-width:
 .choice-box 										{ width:100%;  display:block;  text-align:center;  margin:5px auto !important; padding:10px 0 !important; border:1px solid #bdbdbd; }
 .correct 											{ color:#51a351; font-size: 20px; display: block; margin-bottom: 5px; border-bottom: 1px #51a351 solid; padding-bottom: 5px; }
 .incorrect 											{ color:#f93939; font-size: 20px; display: block; margin-bottom: 5px; border-bottom: 1px #f93939 solid; padding-bottom: 5px; }
-footer                                              { background: rgba(0, 46, 102, 0.8); color: white; padding: 3vh 0; text-align: center; position: absolute; width: 100%; bottom: 0 }
+footer                                              { background: rgba(0, 46, 102, 0.8); color: white; padding: 3vh 0; text-align: center; position: relative; width: 100%; bottom: 0 }
 /*video                                               { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.5 }*/
 video                                               { min-width: 100%;  min-height: 100%; width: auto;  height: auto; position: fixed;  top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);  z-index: -100; background-size: cover; opacity: 0.1; }
