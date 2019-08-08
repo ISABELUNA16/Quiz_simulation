@@ -78,12 +78,41 @@
       </li>
     </ul>
   </div>
-
-</body>
-    
-</html>
 <script>
 
     $("[name='nombre']").prop("required", true);
     
 </script>
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script> -->
+
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCEp3cM3MdtjfvKGJhclKm6FZsjpbdmO8U",
+      authDomain: "examen-59a7c.firebaseapp.com",
+      databaseURL: "https://examen-59a7c.firebaseio.com",
+      projectId: "examen-59a7c",
+      storageBucket: "",
+      messagingSenderId: "686450629213",
+      appId: "1:686450629213:web:ba9659a5a31d9216"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    database = firebase.database();
+    var ref = database.ref('questions');
+
+    console.log(ref);
+
+  </script>
+</body>
+    
+</html>
+

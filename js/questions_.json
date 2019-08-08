@@ -1,4 +1,4 @@
-[
+{ "questions": [
   
     {
         "question"      :   "Pregunta: Es una técnica numérica para conducir experimentos en una computadora ?",
@@ -241,3 +241,4 @@
         "explanation"   :   "Diagrama de Pareto está relacionado con la regla 80/20."
     }
 ]
+}
