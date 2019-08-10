@@ -17,11 +17,12 @@ function shuffle(array) {
     array[randomIndex] = temporaryValue;
   }
 
+
   return array;
 }
 	    
 if (!("scramble" in Array.prototype)) {
-  Object.defineProperty(Array.prototype, "scramble", { 
+  Object.defineProperty(Array.prototype, "scramble", {
     enumerable: false,
     value: function() {
       var o, i, ln = this.length;
@@ -31,262 +32,47 @@ if (!("scramble" in Array.prototype)) {
         this[ln] = this[i];
         this[i] = o;
       }
+    //   console.log(this);
       return this;
     }                                                                                                                           
   });
 }		 
 
-var quiz = [
-        {
-            "question"      :   "Pregunta: Es una técnica numérica para conducir experimentos en una computadora ?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Simulación",
-                                    "Simulación de sistemas",
-                                    "Simulación de eventos discretos",
-                                    "Simulación de eventos actuales"
-                                ],
-            "correct"       :   "Simulación",
-            "explanation"   :   "la simulación se presenta como una herramienta idónea para ensayar, conocer el funcionamiento de determinados sistemas o anticiparse a problemas.",
-        },
-        {
-            "question"      :   "Pregunta: Es el proceso de diseñar y desarrollar un modelo de un sistema o proceso real y conducir experimentos con el propósito de entender el comportamiento del sistema o evaluar varias estrategias para la operación del sistema.",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Simulación",
-                                    "Simulación de sistemas",
-                                    "Simulación de eventos discretos",
-                                    "Simulación de eventos actuales"
-                                ],
-            "correct"       :   "Simulación de sistemas",
-            "explanation"   :   "La simulacion de sistemas es la representacion analitica apoyada en herramientas matematicas y computacionales que permiten evaluar el impacto que producen cambios en las distintas variables, tambien nos permite la eleccion de recursos optimos para el proceso analizado.",
-        },
-        {
-            "question"      :   "Pregunta: Se basa en el uso de ecuaciones matemáticas y estadísticas",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Simulación",
-                                    "Simulación de sistemas",
-                                    "Simulación de eventos discretos",
-                                    "Simulación de eventos actuales"
-                                ],
-            "correct"       :   "Simulación de eventos discretos",
-            "explanation"   :   "Tiene por finalidad identificar a sistemas en los que los eventos que cambian el estado del mismo ocurren en instantes espaciados en el tiempo, a diferencia de los sistemas cuyo estado puede cambiar continuamente en el tiempo.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Qué es un sistema?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Es un modelo",
-                                    "Es un conjunto de partes no interrelacionadas",
-                                    "Es una metodología",
-                                    "Es un conjunto de partes interrelacionadas"
-                                ],
-            "correct"       :   "Es un conjunto de partes interrelacionadas",
-            "explanation"   :   "Un sistema es un conjunto de partes que se relacionan entre sí que persiguen un objetivo.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuál de los siguientes no es una definición de modelo?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Es una abstracción de la realidad",
-                                    "Es una representación de la realidad que ayuda entender cómo funciona",
-                                    "Es una construcción intelectual y descriptiva de una entidad en la cual un observador tiene interés",
-                                    "Es un conjunto de partes interrelacionadas"
-                                ],
-            "correct"       :   "Es un conjunto de partes interrelacionadas",
-            "explanation"   :   "Un modelo es una abstracción, representacion de la realidad o construcción de una entidad de interés para entender el funcionamiento.",
-        },
-        {
-            "question"      :   "Pregunta: Modelo con uno o más parámetros aleatorios. Entradas fijas producen salidas diferentes",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo estocástico",
-            "explanation"   :   "En el modelo estocástico el estado de las variables en el siguiente instante de tiempo no se puede determinar con los datos del estado actual",
-        },
-        {
-            "question"      :   "Pregunta: Modelo en el que entradas fijas producen salidas fijas",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo determinístico",
-            "explanation"   :   "En el modelo determinístico el estado de las variables en el siguiente instante de tiempo se puede determinar con los datos del estado actual",
-        },
-        {
-            "question"      :   "Pregunta: Modelo que permite cambios en el tiempo",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo dinámico",
-            "explanation"   :   "En el modelo dinámico el estado de las variables puede cambiar mientras se realiza algún cálculo.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Qué es un sistema?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Es un modelo",
-                                    "Es un conjunto de partes no interrelacionadas",
-                                    "Es una metodología",
-                                    "Es un conjunto de partes interrelacionadas"
-                                ],
-            "correct"       :   "Es un conjunto de partes interrelacionadas",
-            "explanation"   :   "Un sistema es un conjunto de partes que se relacionan entre sí que persiguen un objetivo.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuál de los siguientes no es una definición de modelo?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Es una abstracción de la realidad",
-                                    "Es una representación de la realidad que ayuda entender cómo funciona",
-                                    "Es una construcción intelectual y descriptiva de una entidad en la cual un observador tiene interés",
-                                    "Es un conjunto de partes interrelacionadas"
-                                ],
-            "correct"       :   "Es un conjunto de partes interrelacionadas",
-            "explanation"   :   "Un modelo es una abstracción, representacion de la realidad o construcción de una entidad de interés para entender el funcionamiento.",
-        },
-        {
-            "question"      :   "Pregunta: Modelo con uno o más parámetros aleatorios. Entradas fijas producen salidas diferentes",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo estocástico",
-            "explanation"   :   "En el modelo estocástico el estado de las variables en el siguiente instante de tiempo no se puede determinar con los datos del estado actual",
-        },
-        {
-            "question"      :   "Pregunta: Modelo en el que entradas fijas producen salidas fijas",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo determinístico",
-            "explanation"   :   "En el modelo determinístico el estado de las variables en el siguiente instante de tiempo se puede determinar con los datos del estado actual",
-        },
-        {
-            "question"      :   "Pregunta: Modelo que permite cambios en el tiempo",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Modelo estático",
-                                    "Modelo determinístico",
-                                    "Modelo estocástico",
-                                    "Modelo dinámico"
-                                ],
-            "correct"       :   "Modelo dinámico",
-            "explanation"   :   "En el modelo dinámico el estado de las variables puede cambiar mientras se realiza algún cálculo.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuál de las siguientes herramientas y técnicas es utilizada para mostrar las categorías de defectos más comunes?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Diagrama de Pareto",
-                                    "Diagramas de Control",
-                                    "Diagramas de Comportamiento",
-                                    "Diagramas de Flujo"
-                                ],
-            "correct"       :   "Diagrama de Pareto",
-            "explanation"   :   "El diagrama de Pareto es utilizado con la finalidad de mostrar las categorías de defectos más frecuentes.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuál herramienta o técnica es utilizada para determinar si un proceso es estable o tiene comportamiento predecible?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Diagrama de Flujo",
-                                    "Diagrama de Control",
-                                    "Tabla de dispersión",
-                                    "Diagrama de Comportamiento"
-                                ],
-            "correct"       :   "Diagrama de Control",
-            "explanation"   :   "El diagrama de Control es usado para determinar si algún proceso es estable o su comportamiento se puede predecir.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuando se realiza una inspección?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "En cualquier momento que se produzca un entregable",
-                                    "Al final del proyecto",
-                                    "Sólo antes de entregar el producto final",
-                                    "Al inicio del proyecto"
-                                ],
-            "correct"       :   "En cualquier momento que se produzca un entregable",
-            "explanation"   :   "Una inspección se puede realizar en cualquier momento se tenga un entregable.",
-        },
-        {
-            "question"      :   "Pregunta: Usted está utilizando un Diagrama de Control para analizar defectos, cuando algo en el diagrama lo lleva a concluir que tiene un problema serio de calidad. ¿Cuál es la razón más probable de esto?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Límites Inferiores de Control",
-                                    "Planificar-Hacer-Verificar-Actuar",
-                                    "Límites Superiores de Control",
-                                    "La regla del 7"
-                                ],
-            "correct"       :   "La regla del 7",
-            "explanation"   :   "Los puntos consecutivos en un Diagrama de Control de Procesosque son ascendentes, descendentes o similares en relación a la media (porarriba o por abajo), indican una tendencia anormal en el proceso, por lotanto deben ser investigados.",
-        },
-        {
-            "question"      :   "Pregunta: ¿Qué herramienta de Control de Calidad es utilizada para analizar procesos viéndolos gráficamente?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Histograma",
-                                    "Diagrama de Pareto",
-                                    "Diagrama de Flujo",
-                                    "Listas de Verificación"
-                                ],
-            "correct"       :   "Diagrama de Flujo",
-            "explanation"   :   "El diagrama de flujo es una herramienta que se utiliza para analizar procesos observándolos gráficamente.",
-        },
-        {
-            "question"      :   "Pregunta: Usted está viendo un diagrama de control para descubrir si la manera en que está realizando su proyecto se adecua a los estándares de su compañía. ¿Qué proceso está realizando?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Controlar la Calidad",
-                                    "Gestionar la Calidad",
-                                    "Aseguramiento de Calidad",
-                                    "Planificar la Gestión de la Calidad"
-                                ],
-            "correct"       :   "Controlar la Calidad",
-            "explanation"   :   "",
-        },
-        {
-            "question"      :   "Pregunta: ¿Cuál de los siguientes está asociado con la regla 80/20?",
-            "image"         :   "",
-            "choices"       :   [
-                                    "Diagrama de Control",
-                                    "Diagrama de dispersión",
-                                    "Diagrama de Pareto",
-                                    "Histograma"
-                                ],
-            "correct"       :   "Diagrama de Pareto",
-            "explanation"   :   "Diagrama de Pareto está relacionado con la regla 80/20.",
-        }
 
-    ];
+const firebaseConfig = {
+    apiKey: "AIzaSyCEp3cM3MdtjfvKGJhclKm6FZsjpbdmO8U",
+    authDomain: "examen-59a7c.firebaseapp.com",
+    databaseURL: "https://examen-59a7c.firebaseio.com",
+    projectId: "examen-59a7c",
+    storageBucket: "",
+    messagingSenderId: "686450629213",
+    appId: "1:686450629213:web:ba9659a5a31d9216"
+};
 
-quiz.forEach(q => q.choices.scramble());
-quiz = shuffle(quiz);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+
+
+// $.getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback', function(data) {
+//     //data is the JSON string
+// });
+
+// console.log(quiz);
+
+
+
+// quiz.forEach(q => q.choices.scramble());
+// quiz = shuffle(quiz);
 	    
-var currentquestion = 0, score = 0, submt=true, picked;
+var currentquestion = 0, score = 0, submt=true, picked, quiz;
 
-jQuery(document).ready(function($){
 
+$(window).on('load', function(){
+
+// jQuery(document).ready(function($){
+// 
     /**
      * HTML Encoding function for alt tags and attributes to prevent messy
      * data appearing inside tag attributes.
@@ -312,7 +98,7 @@ jQuery(document).ready(function($){
     /**
      * Resets all of the fields to prepare for next question
      */
-    function nextQuestion(){
+    function nextQuestion(quiz){
         submt = true;
         $('#explanation').empty();
         $('#question').text(quiz[currentquestion]['question']);
@@ -356,7 +142,7 @@ jQuery(document).ready(function($){
      *
      * @param {choice} number The li zero-based index of the choice picked
      */
-    function processQuestion(choice){
+    function processQuestion(choice , quiz){
         if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
             $('.choice').eq(choice).addClass('btn-success').css({'font-weight':'bold', 'border-color':'#51a351', 'color':'#fff'});
             $('#explanation').html('<span class="correct">CORRECTO!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
@@ -384,7 +170,7 @@ jQuery(document).ready(function($){
     /**
      * Sets up the event listeners for each button.
      */
-    function setupButtons(){
+    function setupButtons(quiz){
         $('.choice').on('click', function(){
             picked = $(this).attr('data-index');
             $('.choice').removeAttr('style').off('mouseout mouseover');
@@ -394,7 +180,7 @@ jQuery(document).ready(function($){
                 $('#submitbutton').css({'color':'#fff','cursor':'pointer'}).on('click', function(){
                     $('.choice').off('click');
                     $(this).off('click');
-                    processQuestion(picked);
+                    processQuestion(picked, quiz);
                 });
             }
         })
@@ -416,49 +202,113 @@ jQuery(document).ready(function($){
         $(document.createElement('h5')).addClass('score').text(Math.round(score * 1) + ' ptos').insertAfter('#question');
     }
 
+
+
+
     /**
      * Runs the first time and creates all of the elements for the quiz
      */
     function init(){
-        //add title
+
         if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string"){
             $(document.createElement('h2')).text(quiztitle).appendTo('#frame');
         } else {
             $(document.createElement('h2')).text("Quiz").appendTo('#frame');
         }
 
-        //add pager and questions
-        if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
-            //add pager
-            $(document.createElement('p')).addClass('pager').attr('id','pager').text('Pregunta 1 de ' + quiz.length).appendTo('#frame');
-            //add first question
-            $(document.createElement('h3')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
-            //add image if present
-            if(quiz[0].hasOwnProperty('image') && quiz[0]['image'] != ""){
-                $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+        var database = firebase.database();
+        var ref = database.ref('questions');
+        var quiz;
+        console.log(1);
+        ref.on('value', gotData);
+        console.log(3);
+        function gotData(data){
+            // quiz = data.val();
+            // console.log(data.val())
+            console.log(2);
+            var returnArr = [];
+
+            data.forEach(function(childData) {
+                var item = childData.val();
+                item.key = childData.key;
+        
+                returnArr.push(item);
+            });
+            // console.log(returnArr);
+        
+            quiz =  returnArr;
+
+        
+        
+        // function errData (err){
+        //     console.log("Error!")
+        //     console.log(err)
+        // }
+            console.log(quiz);
+        
+        // console.log(quiz);
+        //add title
+
+
+        
+
+            //add pager and questions
+            if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
+                
+                //add pager
+                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Pregunta 1 de ' + quiz.length).appendTo('#frame');
+                //add first question
+                $(document.createElement('h3')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
+                //add image if present
+                if(quiz[0].hasOwnProperty('image') && quiz[0]['image'] != ""){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+                }
+
+                $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('').appendTo('#frame');
+
+                //questions holder
+                $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+
+                //add choices
+                addChoices(quiz[0]['choices']);
+
+                //add submit button
+                $(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- Validar respuesta -').css({'font-weight':'bold', 'color':'#fff','padding':'30px 0', 'border-radius':'10px'}).appendTo('#frame');
+
+                setupButtons(quiz);
             }
 
-            $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('').appendTo('#frame');
-
-            //questions holder
-            $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
-
-            //add choices
-            addChoices(quiz[0]['choices']);
-
-            //add submit button
-            $(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- Validar respuesta -').css({'font-weight':'bold', 'color':'#fff','padding':'30px 0', 'border-radius':'10px'}).appendTo('#frame');
-
-            setupButtons();
         }
+
     }
+
+
+    function gotData(data){
+        quiz = data.val();
+        console.log(quiz.length);
+        quiz.forEach(q => q.choices.scramble());
+        quiz = shuffle(quiz);
+    
+        //return data.val();
+    }
+    
+    function errData (err){
+        console.log("Error!");
+        console.log(err);
+    }
+    
 
     init();
 
 });
 
-jQuery(document).ready(function($){			
+
+$(window).on('load', function(){
+// $(window).load(function(){
+// jQuery(document).ready(function($){
+
     $("#question").html(function(){
+        // console.log($("#question"));
     var text= $(this).text().trim().split(" ");
     var first = text.shift();
         return (text.length > 0 ? "<span class='number'>"+ first +"</span> " : first) + text.join(" ");
@@ -481,4 +331,4 @@ function copyText() {
     var output = document.getElementById("frame").innerHTML;
     document.getElementById("placecontent").value = output;
 }
-	    
+	
