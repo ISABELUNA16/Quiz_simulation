@@ -11,7 +11,6 @@ function shuffle(array) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -280,6 +279,8 @@ var quiz = [
 
     ];
 
+
+
 quiz.forEach(q => q.choices.scramble());
 quiz = shuffle(quiz);
 	    
@@ -439,16 +440,11 @@ jQuery(document).ready(function($){
             }
 
             $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('').appendTo('#frame');
-
-            //questions holder
             $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
-
-            //add choices
             addChoices(quiz[0]['choices']);
 
             //add submit button
             $(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- Validar respuesta -').css({'font-weight':'bold', 'color':'#fff','padding':'30px 0', 'border-radius':'10px'}).appendTo('#frame');
-
             setupButtons();
         }
     }
@@ -481,4 +477,5 @@ function copyText() {
     var output = document.getElementById("frame").innerHTML;
     document.getElementById("placecontent").value = output;
 }
+
 	    

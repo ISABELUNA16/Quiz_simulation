@@ -9,6 +9,7 @@
         
         <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css">
         <link type="text/css"  rel="stylesheet" media="all" href="css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
         <!-- jquery for maximum compatibility -->
         <script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -16,20 +17,45 @@
         <!-- Import scrips -->
         <script src="js/validations.js"></script>
         <script src="js/email.js"></script>
+        
     </head>
     <body>
-        <!--<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg" playsinline autoplay muted loop>
-            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">
-            <source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4">
-        </video>--> 
+        <script>
+          // Your web app's Firebase configuration
+            console.log("holaaa");
+          var firebaseConfig = {
+            apiKey: "AIzaSyBrIJIZvn7q5eJqjG1_APXZb11q4AC6o6A",
+            authDomain: "quiz-simulation.firebaseapp.com",
+            databaseURL: "https://quiz-simulation.firebaseio.com",
+            projectId: "quiz-simulation",
+            storageBucket: "quiz-simulation.appspot.com",
+            messagingSenderId: "903425068213",
+            appId: "1:903425068213:web:a4cfa26b8e2b1427"
+          };
+          // Initialize Firebase
+             console.log("holaaa");
+          firebase.initializeApp(firebaseConfig);
+        
+            
+          //var dbRefObject = firebase.database();
+          //var name = "";
+             console.log("holaaa");
+          var rootRef = firebase.database().ref();
+          console.log(rootRef)
+         /* $('#clickbutton').on('click', function(){
+             name = $('') 
+          });*/
+
+        </script>
+        
         <video playsinline autoplay muted loop>
            <source src="mp4/bg.mp4" type="video/mp4">
         </video>
-        <!--<header>
+        <header>
             <div style="margin-left:10px;">
                 <img src="img/logo_unfv2.png" alt="logo" width="10%" height="80"/>
             </div>
-        </header>-->
+        </header>
         <main>
             <div class="form-group rsform-block rsform-block-framecontent">
                 <div id="frame" role="content"></div>
@@ -37,14 +63,14 @@
             <hr>
             <div class="form-group rsform-block rsform-block-placecontent">
                 <label class="col-sm-3 control-label formControlLabel" data-toggle="tooltip" title="" for="placecontent"></label>
-                <!--<div class="col-sm-6 formControls" hidden="true">
-                    <textarea cols="50" rows="5" name="form[placecontent]" id="placecontent" readonly="" class="rsform-text-box form-control rsform-text-box"></textarea>			
-                </div>-->
+            
             </div>	
             <div class="col-sm-3 formControls rsform-block-submit">
-                <!--<button type="submit" name="form[submit]" id="submit" onclick="copyText()" class="rsform-submit-button  btn btn-primary">Enviar examen</button>-->
                 <button type="submit" id="submit" onclick="window.location.href='index.html'" class="rsform-submit-button  btn btn-warning">Volver al inicio</button>
             </div>	
+            <div>
+                <button id="clickbutton" type="submit">Data</button>
+            </div>
             
         </main>
        
@@ -52,5 +78,8 @@
             <small>Copyright © 2019 by Rosmery Isabel Luna Tito. All Rights Reserved.</small>
         </footer>
     </body>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+   
 </html>
 
